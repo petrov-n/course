@@ -1,0 +1,14 @@
+	<article class="order">
+    <section class="order-head">
+      <h3><%= link_to order.user, order_path(order) %></h3>
+      <small>
+        <time><%= order.date_from %> / <%= order.date_to %></time>
+       	<div>Место: <%= order.place %> / Стоимость:<%= order.cost %></div>
+          <% if user_signed_in? %>
+          <%= link_to 'Редактировать', edit_order_path(order) %>
+          |
+          <%= link_to  'Удалить', order_path(order), method: :delete, data: {confirm: 'Подтврдите удаление'} %>
+          <% end %>
+      </small>
+    </section>
+  </article>

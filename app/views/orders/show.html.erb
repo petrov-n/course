@@ -1,0 +1,17 @@
+  <article class="order">
+    <section class="order-head">
+      <h1><%= @order.user %></h1>
+      <small>
+        <time><%= @order.date_from %> / <%= @order.date_to %></time>
+        <% if user_signed_in? %>
+          |
+          <%= link_to 'Редактировать', edit_order_path(@order) %>
+          |
+          <%= link_to  'Удалить', order_path(@order), method: :delete, data: {confirm: 'Подтврдите удаление'} %>
+          <% end %>
+      </small>
+    </section>
+    <section class="order-body">
+      Место: <%= @order.place %> / Стоимость:<%= @order.cost %>
+    </section>
+  </article>
