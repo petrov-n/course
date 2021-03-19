@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: 
+  place: 
+  cost: 
+  date_from: 2021-03-15 10:40:31
+  date_to: 2021-03-15 10:40:31
+  status: false
+
+two:
+  user: 
+  place: 
+  cost: 
+  date_from: 2021-03-15 10:40:31
+  date_to: 2021-03-15 10:40:31
+  status: false
